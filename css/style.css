@@ -124,3 +124,9 @@ body::-webkit-scrollbar {
     top: -25px;
     font-family: sans-serif;
 }
+.last-update {
+    position: absolute;
+    top: 500px;
+    left: 73%;
+    font-size: 13px;
+}

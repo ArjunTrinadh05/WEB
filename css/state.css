@@ -1,0 +1,19 @@
+.main{
+          background-color: #06f04c;    
+          display: inline-flex;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+}
+.info{
+            border-radius: 16px;
+           
+            border: 2px solid white;
+            background-color: white;
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+            margin-left: 40px;
+            margin-top: 15px;
+
+}
