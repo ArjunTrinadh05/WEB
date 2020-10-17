@@ -1,11 +1,4 @@
-function statedata() {
-    function styles(div,h3) {
-        div.style['background-color'] = "white";
-        div.style['width'] = "30%";
-        div.style['height'] = "40%";
-        div.style['margin'] = "10px";
-    
-       }
+   function statedata() {
             const htp = new XMLHttpRequest();
             htp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
@@ -17,9 +10,9 @@ function statedata() {
                         var w = data123.data.regional[i].discharged;
                         var u = data123.data.regional[i].deaths;
                         var div = document.createElement('div')
-                        var heading = document.createElement('h3');
-                        div.appendChild(heading);
-                        heading.appendChild(document.createTextNode(x));
+                        var node = document.createElement('h3');
+                        div.appendChild(node);
+                        node.appendChild(document.createTextNode(x));
                         var nOp = document.createElement('p');
                         div.appendChild(nOp);
                         nOp.appendChild(document.createTextNode(y));
@@ -33,7 +26,6 @@ function statedata() {
                         div.appendChild(nOd);
                         nOd.appendChild(document.createTextNode(u));
                         document.getElementById("statedata").appendChild(div);
-                        styles(div,heading);
                     }
                 }
             }
