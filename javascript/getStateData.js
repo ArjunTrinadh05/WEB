@@ -9,14 +9,23 @@
                         var z = data123.data.regional[i].confirmedCasesForeign;
                         var w = data123.data.regional[i].discharged;
                         var u = data123.data.regional[i].deaths;
-                        const htp2 = new XMLHttpRequest();
-                        htp2.onreadystatechange = function() {
-                            if (this.readyState == 4 && this.status == 200) {
-                                document.write(htp2.responseText)
-                            }
-                        }
-                        htp2.open("get", "Requirements/StateData.php?q=" + x + "&y=" + y + "&z=" + z + "&w=" + w+"&u="+ u, true);
-                        htp2.send();
+                        var div = document.createElement('div')
+                        var node = document.createElement('h3');
+                        div.appendChild(node);
+                        node.appendChild(document.createTextNode(x));
+                        var nOp = document.createElement('p');
+                        div.appendChild(nOp);
+                        nOp.appendChild(document.createTextNode(y));
+                         var nOfc = document.createElement('p');
+                        div.appendChild(nOfc);
+                        nOfc.appendChild(document.createTextNode(z));
+                         var nOdis = document.createElement('p');
+                        div.appendChild(nOdis);
+                        nOdis.appendChild(document.createTextNode(w));
+                         var nOd = document.createElement('p');
+                        div.appendChild(nOd);
+                        nOd.appendChild(document.createTextNode(u));
+                        document.getElementById("statedata").appendChild(div);
                     }
                 }
             }

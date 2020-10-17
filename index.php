@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="javascript/getdata.js"></script>
     <script src="https://kit.fontawesome.com/63fb2f6a1f.js" crossorigin="anonymous"></script>
-    <title>COVID)</title>
+    <title>COVID :)</title>
 </head>
 
 <body onload="get()">
