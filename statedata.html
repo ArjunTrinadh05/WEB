@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <script src="javascript/getStateData.js"></script>
+    <script src="javascript\name.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/63fb2f6a1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stateData.css">
+</head>
+
+<body onload="statedata()">
+    
+    <div class="search">
+        <div class="searchbox">
+    <input type="text" name="state" placeholder="Name of State" onclick="getName(this.value)">
+    <i class="fas fa-search"></i>
+    </div>
+    </div>
+    <div id="statedata" class="statedata"></div>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand"><a class="text-gray" href="#">COMMUNITY</a></div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons"><i class="fa fa-bars"></i></div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="#">Blog</a></li>
+                    <li class="nav-link"><a href="#"> Contact us</a></li>
+                    <li class="nav-link"><a href="#">Queries</a></li>
+                    <li class="nav-link"><a href="#">Suggestions</a></li>
+    
+                </ul>
+            </div>
+            <div class="social text-gray"><a href=""><i class="fa fa-facebook"></i></a><a href="#"><i
+                        class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i
+                        class="fa fa-youtube"> </i></a><a href="/"> signout </a></div>
+        </div>
+    </nav>
+    <div id="totalinfo"></div>
+</body>
+
+</html>
