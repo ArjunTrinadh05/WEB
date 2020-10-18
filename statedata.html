@@ -8,7 +8,9 @@
     <script src="javascript/getStateData.js"></script>
     <script src="javascript\name.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://kit.fontawesome.com/63fb2f6a1f.js" crossorigin="anonymous"></script>
+    <script src="javascript/piecharts.js"></script>
     <link rel="stylesheet" href="css/stateData.css">
 </head>
 
@@ -16,7 +18,7 @@
     
     <div class="search">
         <div class="searchbox">
-    <input type="text" name="state" placeholder="Name of State" onclick="getName(this.value)">
+    <input type="text" name="state" placeholder="Name of State" onkeyup="getName(this.value,event)">
     <i class="fas fa-search"></i>
     </div>
     </div>
@@ -42,7 +44,10 @@
                         class="fa fa-youtube"> </i></a><a href="/"> signout </a></div>
         </div>
     </nav>
-    <div id="totalinfo"></div>
+    <div id="totalinfo">
+        <div id="stateinfo"></div>
+        <div id="piechart"></div>
+    </div>
 </body>
 
 </html>

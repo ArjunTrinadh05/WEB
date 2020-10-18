@@ -87,4 +87,25 @@
   height: 55%;
   background-color: cornflowerblue;
   color: #1b262c;
+  font-size: 25px;
+}
+.CompleteDetails{
+ background-color: yellow;
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+  margin-top: 40px;
+  margin-left: 35px;
+}
+.CompleteDetails h3{
+  margin: 20px;
+  padding: 0%;
+}
+.CompleteDetails p{
+  margin: 10px;
+}
+#piechart{
+ position: absolute;
+ left: 30%;
+ top: 0%;
 }
